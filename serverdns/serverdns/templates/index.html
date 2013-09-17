@@ -1,0 +1,18 @@
+{% if latest_mapping_list %}
+	<table border="1">
+		<tr>
+			<th>Package name</th>
+			<th>IP address</th>
+			<th>Last update </th>
+		</tr>
+		{% for mapping in latest_mapping_list %}
+		<tr>
+			<td>{{mapping.pname}}</td>
+			<td>{{mapping.sip}}</td>
+			<td>{{mapping.cdate}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+{% else %}
+    <p>No mappings are available.</p>
+{% endif %}
