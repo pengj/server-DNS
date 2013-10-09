@@ -14,9 +14,11 @@ keyword search based on the service name
 
 
 add/update a service: http://server-dns.eu01.aws.af.cm/service-name/to/IP-address
+
 FEEDBACK: create or update
 
 search a service: http://server-dns.eu01.aws.af.cm/get/service-name
+
 FEEDBACK: IP adress or 404
 
 Database table:
